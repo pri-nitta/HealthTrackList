@@ -12,7 +12,7 @@ public class Teste {
 		List<Corrida> listaCorridas = new CorridaDAO().getAll();
 
 		for (Corrida corrida: listaCorridas) {
-			System.out.println("CORRIDA " + listaCorridas.indexOf(listaCorridas) + "\n" + corrida);
+			System.out.println("CORRIDA " + (listaCorridas.indexOf(corrida)+1) + "\n" + corrida);
 		}
 	}
 
