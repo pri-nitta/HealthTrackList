@@ -3,7 +3,19 @@ package com.java;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe que simula um Data access object de corrida
+ * 
+ * @author grupo Jarvis
+ * @version 1.0
+ */
+
 public class CorridaDAO {
+	
+	/**
+	 * Recupera todos os dados inseridos na lista
+	 * @return listaCorridas
+	 */
 	
 	public List<Corrida> getAll(){
 		

@@ -104,6 +104,9 @@ public class Corrida extends AtividadeFisica {
 		this.tipoDePista = tipoDePista;
 	}
 	
+	/**
+	 * Auxilia a impressao da informacao formatada
+	 */
 	@Override
 	public String toString() {
 		return "Data: "+ getData() +"\n"
