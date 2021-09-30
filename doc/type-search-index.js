@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.java","l":"AtividadeFisica"},{"p":"com.java","l":"Corrida"},{"p":"com.java","l":"CorridaDAO"},{"p":"com.java","l":"Teste"}];updateSearchResults();

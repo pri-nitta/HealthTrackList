@@ -37,11 +37,14 @@ public class Corrida extends AtividadeFisica {
 	}
 
 	/**
-	 * Constructor Corrida
+	 * Construtor corrida
 	 * 
-	 * @param pace
-	 * @param distancia
-	 * @param tipoDePista
+	 * @param data dia, mes e ano que foi feita a corrida
+	 * @param duracao tempo da corrida
+	 * @param intensidade mede o esforco durante a corrida
+	 * @param caloriasGastas quanto de energia em kcal o corredor gastou
+	 * @param distancia quantos kms o corredor percorreu
+	 * @param tipoDePista como era o local onde o corredor correu
 	 */
 	public Corrida(String data, double duracao, String intensidade, int caloriasGastas, int distancia,
 			String tipoDePista) {
@@ -62,7 +65,7 @@ public class Corrida extends AtividadeFisica {
 	/**
 	 * Altera o pace
 	 * 
-	 * @param pace
+	 * @param pace tempo gasto por cada km corrido
 	 */
 	public void setPace(double pace) {
 		this.pace = pace;
@@ -80,7 +83,7 @@ public class Corrida extends AtividadeFisica {
 	/**
 	 * Altera a distancia percorrida
 	 * 
-	 * @param distancia
+	 * @param distancia quantos kms o corredor percorreu
 	 */
 	public void setDistancia(int distancia) {
 		this.distancia = distancia;
@@ -98,25 +101,21 @@ public class Corrida extends AtividadeFisica {
 	/**
 	 * Altera o tipo de pista
 	 * 
-	 * @param tipoDePista
+	 * @param tipoDePista como era o local onde o corredor correu
 	 */
 	public void setTipoDePista(String tipoDePista) {
 		this.tipoDePista = tipoDePista;
 	}
-	
+
 	/**
 	 * Auxilia a impressao da informacao formatada
 	 */
 	@Override
 	public String toString() {
-		return "Data: "+ getData() +"\n"
-				+"Duração: " + getDuracao() + " min\n"
-				+"Calorias Gastas: " + getCaloriasGastas() +" kcal\n" 
-				+"Intensidade: " + getIntensidade() +"\n"
-				+"Distância: " + distancia + " km\n"
-				+"Tipo de pista: " + tipoDePista + "\n"
-				+"Pace: " + getPace() + " min/km \n"
-				+"----------------------------------";	
-		
+		return "Data: " + getData() + "\n" + "Duração: " + getDuracao() + " min\n" + "Calorias Gastas: "
+				+ getCaloriasGastas() + " kcal\n" + "Intensidade: " + getIntensidade() + "\n" + "Distância: "
+				+ distancia + " km\n" + "Tipo de pista: " + tipoDePista + "\n" + "Pace: " + getPace() + " min/km \n"
+				+ "----------------------------------";
+
 	}
 }

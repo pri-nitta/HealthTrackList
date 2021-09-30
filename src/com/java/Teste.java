@@ -10,6 +10,11 @@ import java.util.List;
  */
 
 public class Teste {
+	
+	/**
+	 * Executa o teste
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		

@@ -46,10 +46,10 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Constructor Atividade Fisica
 	 * 
-	 * @param data
-	 * @param duracao
-	 * @param intensidade
-	 * @param caloriasGastas
+	 * @param data dia, mes e ano que foi feita a atividade
+	 * @param duracao tempo da atividade
+	 * @param intensidade mede o esforco durante a atividade
+	 * @param caloriasGastas quanto de energia em kcal foi gasta
 	 */
 	public AtividadeFisica(String data, double duracao, String intensidade, int caloriasGastas) {
 		this.data = data;
@@ -70,7 +70,7 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Altera a duracao da atividade fisica
 	 * 
-	 * @param duracao
+	 * @param duracao tempo da atividade
 	 */
 	public void setDuracao(double duracao) {
 		this.duracao = duracao;
@@ -79,7 +79,7 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Verifica a intensidade da atividade fisica
 	 * 
-	 * @return intensidade
+	 * @return intensidade 
 	 */
 	public String getIntensidade() {
 		return intensidade;
@@ -88,7 +88,7 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Altera a intensidade da atividade fisica
 	 * 
-	 * @param intensidade
+	 * @param intensidade mede o esforco durante a atividade
 	 */
 	public void setIntensidade(String intensidade) {
 		this.intensidade = intensidade;
@@ -106,7 +106,7 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Altera as calorias gastas durante a atividade fisica
 	 * 
-	 * @param caloriasGastas
+	 * @param caloriasGastas quanto de energia em kcal foi gasta
 	 */
 	public void setCaloriasGastas(int caloriasGastas) {
 		this.caloriasGastas = caloriasGastas;
@@ -124,7 +124,7 @@ public class AtividadeFisica implements Serializable {
 	/**
 	 * Altera a data
 	 * 
-	 * @param data
+	 * @param data dia, mes e ano que foi feita a atividade
 	 */
 	public void setData(String data) {
 		this.data = data;
